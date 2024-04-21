@@ -38,46 +38,11 @@
 -->
 <LEAudioConfig>
 
-<TMAP>
+<Default>
+
+<HAP_LE>
 	<LC3Q>
 		<CodecCapabilitiesForVoice>
-			<CodecSettings>
-				<CodecVersion>1</CodecVersion>
-				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			<!-- SS related for Voice-HD
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			-->
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
@@ -90,6 +55,265 @@
 				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+		<QosSettingsForLowLatencyVoice>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR3>
+</HAP_LE>
+
+<TMAP>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 		</CodecCapabilitiesForVoice>
@@ -122,6 +346,13 @@
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -222,7 +453,7 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>40</MaxSDUSize>
 				<RetransmissionNumber>4</RetransmissionNumber>
-				<MaxTransportLatency>8</MaxTransportLatency>
+				<MaxTransportLatency>10</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -282,6 +513,7 @@
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
+			<!-- SS config for voice-HD
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
@@ -289,7 +521,19 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>80</MaxSDUSize>
 				<RetransmissionNumber>2</RetransmissionNumber>
-				<MaxTransportLatency>7</MaxTransportLatency>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -309,6 +553,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -320,6 +565,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -331,6 +577,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -342,6 +589,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -353,6 +601,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -364,6 +613,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -375,6 +625,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -386,6 +637,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -397,6 +649,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -408,6 +661,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -419,6 +673,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>1</CodecVersion>
@@ -430,7 +685,9 @@
 				<MaxTransportLatency>120</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
 			</QoSSettings>
+			<!-- SS config for media
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -438,9 +695,23 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>120</MaxSDUSize>
 				<RetransmissionNumber>27</RetransmissionNumber>
-				<MaxTransportLatency>84</MaxTransportLatency>
+				<MaxTransportLatency>100</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -452,6 +723,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -463,6 +735,7 @@
 				<MaxTransportLatency>100</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
 			</QoSSettings>
 		</QosSettingsForHighReliabilityMedia>
 	</LC3Q>
@@ -472,17 +745,31 @@
 		</CodecCapabilitiesForVoice>
 		<CodecCapabilitiesForMedia>
 			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>1242</OctetsPerCodecFrame>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>1242</OctetsPerCodecFrame>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 		</CodecCapabilitiesForMedia>
@@ -495,13 +782,35 @@
 
 		<QosSettingsForHighReliabilityMedia>
 			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>1242</MaxSDUSize>
-				<RetransmissionNumber>15</RetransmissionNumber>
-				<MaxTransportLatency>11</MaxTransportLatency>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -510,9 +819,9 @@
 				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
 				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>1242</MaxSDUSize>
-				<RetransmissionNumber>15</RetransmissionNumber>
-				<MaxTransportLatency>11</MaxTransportLatency>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -526,11 +835,17 @@
 			<CodecSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
-			<!-- SS related for Voice-HD
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
@@ -538,11 +853,17 @@
 				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
-			-->
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
@@ -555,9 +876,9 @@
 			</CodecSettings>
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -565,13 +886,6 @@
 				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 		</CodecCapabilitiesForVoice>
@@ -604,6 +918,13 @@
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -704,7 +1025,7 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>40</MaxSDUSize>
 				<RetransmissionNumber>4</RetransmissionNumber>
-				<MaxTransportLatency>8</MaxTransportLatency>
+				<MaxTransportLatency>10</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -764,6 +1085,7 @@
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
+			<!-- SS config for voice-HD
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
@@ -771,7 +1093,19 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>80</MaxSDUSize>
 				<RetransmissionNumber>2</RetransmissionNumber>
-				<MaxTransportLatency>7</MaxTransportLatency>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -791,6 +1125,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -802,6 +1137,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -813,6 +1149,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -824,6 +1161,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -835,6 +1173,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -846,6 +1185,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -857,6 +1197,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -868,6 +1209,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -879,6 +1221,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -890,6 +1233,7 @@
 				<MaxTransportLatency>95</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -901,6 +1245,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>1</CodecVersion>
@@ -912,7 +1257,9 @@
 				<MaxTransportLatency>120</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
 			</QoSSettings>
+			<!-- SS config for media
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -920,9 +1267,23 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>120</MaxSDUSize>
 				<RetransmissionNumber>27</RetransmissionNumber>
-				<MaxTransportLatency>84</MaxTransportLatency>
+				<MaxTransportLatency>100</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -934,6 +1295,7 @@
 				<MaxTransportLatency>75</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
 			</QoSSettings>
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
@@ -945,6 +1307,7 @@
 				<MaxTransportLatency>100</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
 			</QoSSettings>
 		</QosSettingsForHighReliabilityMedia>
 	</LC3Q>
@@ -954,17 +1317,31 @@
 		</CodecCapabilitiesForVoice>
 		<CodecCapabilitiesForMedia>
 			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>1242</OctetsPerCodecFrame>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>1242</OctetsPerCodecFrame>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 		</CodecCapabilitiesForMedia>
@@ -977,13 +1354,35 @@
 
 		<QosSettingsForHighReliabilityMedia>
 			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
 				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>1242</MaxSDUSize>
-				<RetransmissionNumber>15</RetransmissionNumber>
-				<MaxTransportLatency>11</MaxTransportLatency>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -992,14 +1391,63 @@
 				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
 				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>1242</MaxSDUSize>
-				<RetransmissionNumber>15</RetransmissionNumber>
-				<MaxTransportLatency>11</MaxTransportLatency>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 		</QosSettingsForHighReliabilityMedia>
 	</AAR3>
+	<AAR4>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>188</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>188</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForHighReliabilityMedia>
+                        <QoSSettings>
+                                <CodecVersion>1</CodecVersion>
+                                <SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+                                <SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+                                <Framing>0</Framing>
+                                <MaxSDUSize>188</MaxSDUSize>
+                                <RetransmissionNumber>5</RetransmissionNumber>
+                                <MaxTransportLatency>70</MaxTransportLatency>
+                                <PresentationDelay>25000</PresentationDelay>
+                                <Mandatory>0</Mandatory>
+                        </QoSSettings>
+                        <QoSSettings>
+                                <CodecVersion>1</CodecVersion>
+                                <SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+                                <SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+                                <Framing>0</Framing>
+                                <MaxSDUSize>188</MaxSDUSize>
+                                <RetransmissionNumber>5</RetransmissionNumber>
+                                <MaxTransportLatency>70</MaxTransportLatency>
+                                <PresentationDelay>25000</PresentationDelay>
+                                <Mandatory>0</Mandatory>
+                        </QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR4>
 </BAP>
 
 <GCP>
@@ -1011,8 +1459,8 @@
 			<CodecSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -1034,6 +1482,13 @@
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
@@ -1048,6 +1503,13 @@
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
@@ -1057,13 +1519,6 @@
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
-				<Mandatory>0</Mandatory>
-			</CodecSettings>
-			<CodecSettings>
-				<CodecVersion>0</CodecVersion>
-				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -1131,11 +1586,11 @@
 			<QoSSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
-				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>100</MaxSDUSize>
-				<RetransmissionNumber>4</RetransmissionNumber>
-				<MaxTransportLatency>8</MaxTransportLatency>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
 				<PresentationDelay>10000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -1150,6 +1605,7 @@
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
+			<!-- SS config for Game
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -1157,8 +1613,20 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>120</MaxSDUSize>
 				<RetransmissionNumber>7</RetransmissionNumber>
-				<MaxTransportLatency>17</MaxTransportLatency>
+				<MaxTransportLatency>20</MaxTransportLatency>
 				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>12</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 			<QoSSettings>
@@ -1280,6 +1748,17 @@
 				<RetransmissionNumber>5</RetransmissionNumber>
 				<MaxTransportLatency>15</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 			<QoSSettings>
@@ -1324,9 +1803,25 @@
 
 <WMCP>
 	<LC3Q>
-		<CodecCapabilitiesForMedia>
+	    <CodecCapabilitiesForHAPMedia>
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+	    </CodecCapabilitiesForHAPMedia>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
@@ -1358,6 +1853,13 @@
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -1526,7 +2028,7 @@
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 			<QoSSettings>
-				<CodecVersion>0</CodecVersion>
+				<CodecVersion>1</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
@@ -1534,6 +2036,17 @@
 				<RetransmissionNumber>11</RetransmissionNumber>
 				<MaxTransportLatency>40</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 			<QoSSettings>
@@ -1581,6 +2094,32 @@
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 		</QosSettingsForHighReliabilityMedia>
+		<QosSettingsForHapMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHapMedia>
 	</LC3Q>
 
 	<AAR3>
@@ -1598,8 +2137,8 @@
 			<CodecSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -1609,7 +2148,6 @@
 				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
-			<!-- SS config for G+VBC
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
@@ -1617,7 +2155,6 @@
 				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
-			-->
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -1632,11 +2169,20 @@
 				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
-			<CodecVersion>0</CodecVersion>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
+			</CodecSettings>
 			<CodecSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -1706,11 +2252,11 @@
 			<QoSSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
-				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>60</MaxSDUSize>
-				<RetransmissionNumber>4</RetransmissionNumber>
-				<MaxTransportLatency>8</MaxTransportLatency>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
 				<PresentationDelay>12000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -1721,7 +2267,7 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>30</MaxSDUSize>
 				<RetransmissionNumber>3</RetransmissionNumber>
-				<MaxTransportLatency>12</MaxTransportLatency>
+				<MaxTransportLatency>15</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -1732,7 +2278,7 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>40</MaxSDUSize>
 				<RetransmissionNumber>5</RetransmissionNumber>
-				<MaxTransportLatency>17</MaxTransportLatency>
+				<MaxTransportLatency>20</MaxTransportLatency>
 				<PresentationDelay>12000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -1843,6 +2389,17 @@
 				<MaxSDUSize>90</MaxSDUSize>
 				<RetransmissionNumber>5</RetransmissionNumber>
 				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -1889,8 +2446,8 @@
 			<CodecSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
-				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
-				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -1921,6 +2478,13 @@
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
 				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
 				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
 				<Mandatory>0</Mandatory>
 			</CodecSettings>
 			<CodecSettings>
@@ -2009,11 +2573,11 @@
 			<QoSSettings>
 				<CodecVersion>2</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
-				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
 				<Framing>0</Framing>
-				<MaxSDUSize>100</MaxSDUSize>
-				<RetransmissionNumber>4</RetransmissionNumber>
-				<MaxTransportLatency>8</MaxTransportLatency>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
 				<PresentationDelay>10000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -2024,10 +2588,11 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>75</MaxSDUSize>
 				<RetransmissionNumber>5</RetransmissionNumber>
-				<MaxTransportLatency>12</MaxTransportLatency>
+				<MaxTransportLatency>15</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
+			<!-- SS config for Game
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
@@ -2035,10 +2600,11 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>120</MaxSDUSize>
 				<RetransmissionNumber>5</RetransmissionNumber>
-				<MaxTransportLatency>17</MaxTransportLatency>
+				<MaxTransportLatency>20</MaxTransportLatency>
 				<PresentationDelay>10000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
+			-->
 			<QoSSettings>
 				<CodecVersion>0</CodecVersion>
 				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
@@ -2158,6 +2724,17 @@
 				<RetransmissionNumber>5</RetransmissionNumber>
 				<MaxTransportLatency>15</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 			<QoSSettings>
@@ -2220,7 +2797,7 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>40</MaxSDUSize>
 				<RetransmissionNumber>24</RetransmissionNumber>
-				<MaxTransportLatency>85</MaxTransportLatency>
+				<MaxTransportLatency>100</MaxTransportLatency>
 				<PresentationDelay>40000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
@@ -2248,13 +2825,3215 @@
 				<Framing>0</Framing>
 				<MaxSDUSize>120</MaxSDUSize>
 				<RetransmissionNumber>59</RetransmissionNumber>
-				<MaxTransportLatency>185</MaxTransportLatency>
+				<MaxTransportLatency>200</MaxTransportLatency>
 				<PresentationDelay>25000</PresentationDelay>
 				<Mandatory>0</Mandatory>
 			</QoSSettings>
 		</QosSettingsForHighReliabilityMedia>
 	</LC3Q>
 </WMCP_RX>
+
+</Default>
+
+<Advanced>
+
+<HAP_LE>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+		<QosSettingsForLowLatencyVoice>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR3>
+</HAP_LE>
+
+<TMAP>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>160</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>190</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>145</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<!-- SS config for Media
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			-->
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+		<QosSettingsForLowLatencyVoice>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>14</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>14</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for voice
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>4</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>160</MaxSDUSize>
+				<RetransmissionNumber>8</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>22</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for voice-HD
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>24</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>190</MaxSDUSize>
+				<RetransmissionNumber>20</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>31</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>145</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>120</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<!-- SS config for Media
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>27</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR3>
+</TMAP>
+
+<BAP>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>160</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>190</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>145</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<!-- SS config for Media
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			-->
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+		<QosSettingsForLowLatencyVoice>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>14</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>14</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for voice
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>4</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>160</MaxSDUSize>
+				<RetransmissionNumber>8</RetransmissionNumber>
+				<MaxTransportLatency>30</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>22</MaxTransportLatency>
+				<PresentationDelay>18000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for voice-HD
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>24</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>190</MaxSDUSize>
+				<RetransmissionNumber>20</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>31</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>145</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>120</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<!-- SS config for Media
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>27</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>2,3</AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs>1,3</AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1976</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>15000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>1304</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1976</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>15000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>1304</MaxSDUSize>
+				<RetransmissionNumber>10</RetransmissionNumber>
+				<MaxTransportLatency>74</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR3>
+	<AAR4>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>188</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>188</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForHighReliabilityMedia>
+                        <QoSSettings>
+                                <CodecVersion>1</CodecVersion>
+                                <SamplingFrequencyInHz>96000</SamplingFrequencyInHz>
+                                <SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+                                <Framing>0</Framing>
+                                <MaxSDUSize>188</MaxSDUSize>
+                                <RetransmissionNumber>5</RetransmissionNumber>
+                                <MaxTransportLatency>70</MaxTransportLatency>
+                                <PresentationDelay>25000</PresentationDelay>
+                                <Mandatory>0</Mandatory>
+                        </QoSSettings>
+                        <QoSSettings>
+                                <CodecVersion>1</CodecVersion>
+                                <SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+                                <SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+                                <Framing>0</Framing>
+                                <MaxSDUSize>188</MaxSDUSize>
+                                <RetransmissionNumber>5</RetransmissionNumber>
+                                <MaxTransportLatency>70</MaxTransportLatency>
+                                <PresentationDelay>25000</PresentationDelay>
+                                <Mandatory>0</Mandatory>
+                        </QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR4>
+</BAP>
+
+<GCP>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForHAPMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForHAPMedia>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<!-- SS config for Game
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			-->
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForHapMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHapMedia>
+
+		<QosSettingsForLowLatencyMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>12</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for Game
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>7</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>12</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForMedia>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+	</AAR3>
+</GCP>
+
+<WMCP>
+	<LC3Q>
+
+		<CodecCapabilitiesForHAPMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForHAPMedia>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>31</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>11</RetransmissionNumber>
+				<MaxTransportLatency>40</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>95</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>75</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>13</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+
+		<QosSettingsForHapMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHapMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForMedia>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+		</QosSettingsForHighReliabilityMedia>
+	</AAR3>
+</WMCP>
+
+<GCP_RX>
+	<LC3Q>
+
+		<CodecCapabilitiesForHAPMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForHAPMedia>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
+				<PresentationDelay>12000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>12000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyMedia>
+
+		<QosSettingsForHapMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHapMedia>
+
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForMedia>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+	</AAR3>
+</GCP_RX>
+
+<GCP_TX>
+	<LC3Q>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForHAPMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForHAPMedia>
+
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<!-- SS config for Game
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			-->
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>155</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>117</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>90</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>100</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>75</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>80</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>60</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>45</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>30</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>7500</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>26</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForHapMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+				<AltQoSSettingIDs></AltQoSSettingIDs>
+			</QoSSettings>
+		</QosSettingsForHapMedia>
+
+		<QosSettingsForLowLatencyMedia>
+			<QoSSettings>
+				<CodecVersion>2</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>3</RetransmissionNumber>
+				<MaxTransportLatency>5</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>1</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<!-- SS config for Game
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			-->
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>26</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>8000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>30</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>45</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>24000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>60</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>8</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>32000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>80</MaxSDUSize>
+				<RetransmissionNumber>2</RetransmissionNumber>
+				<MaxTransportLatency>10</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>75</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>100</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>90</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>10000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>7500</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>117</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>15</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>155</MaxSDUSize>
+				<RetransmissionNumber>5</RetransmissionNumber>
+				<MaxTransportLatency>20</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForLowLatencyMedia>
+	</LC3Q>
+
+	<AAR3>
+		<CodecCapabilitiesForVoice>
+		</CodecCapabilitiesForVoice>
+
+		<CodecCapabilitiesForMedia>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForLowLatencyVoice>
+		</QosSettingsForLowLatencyVoice>
+
+		<QosSettingsForLowLatencyMedia>
+		</QosSettingsForLowLatencyMedia>
+	</AAR3>
+</GCP_TX>
+
+<WMCP_TX>
+	<LC3Q>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>40</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>16000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>40</MaxSDUSize>
+				<RetransmissionNumber>24</RetransmissionNumber>
+				<MaxTransportLatency>100</MaxTransportLatency>
+				<PresentationDelay>40000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+</WMCP_TX>
+
+<WMCP_RX>
+	<LC3Q>
+		<CodecCapabilitiesForMedia>
+			<CodecSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<FrameDurationInMicroSecs>10000</FrameDurationInMicroSecs>
+				<OctetsPerCodecFrame>120</OctetsPerCodecFrame>
+				<Mandatory>0</Mandatory>
+			</CodecSettings>
+		</CodecCapabilitiesForMedia>
+
+		<QosSettingsForHighReliabilityMedia>
+			<QoSSettings>
+				<CodecVersion>0</CodecVersion>
+				<SamplingFrequencyInHz>48000</SamplingFrequencyInHz>
+				<SDUIntervalInMicroSecs>10000</SDUIntervalInMicroSecs>
+				<Framing>0</Framing>
+				<MaxSDUSize>120</MaxSDUSize>
+				<RetransmissionNumber>59</RetransmissionNumber>
+				<MaxTransportLatency>200</MaxTransportLatency>
+				<PresentationDelay>25000</PresentationDelay>
+				<Mandatory>0</Mandatory>
+			</QoSSettings>
+		</QosSettingsForHighReliabilityMedia>
+	</LC3Q>
+</WMCP_RX>
+
+</Advanced>
+
+<AltQoSSettings>
+	<QoSSettings>
+		<ID>1</ID>
+		<MaxSDUSize>120</MaxSDUSize>
+	</QoSSettings>
+	<QoSSettings>
+		<ID>2</ID>
+		<MaxSDUSize>100</MaxSDUSize>
+	</QoSSettings>
+	<QoSSettings>
+		<ID>3</ID>
+		<MaxSDUSize>80</MaxSDUSize>
+	</QoSSettings>
+</AltQoSSettings>
 
 </LEAudioConfig>
 

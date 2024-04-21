@@ -8,8 +8,6 @@
 # ******************************************************************************/
 #!/bin/bash
 
-mkdir -p aptxalsOverlay/res/drawable
-mkdir -p aptxalsOverlay/res/drawable-night
 mkdir -p aptxalsOverlay/res/values
 
 cat > aptxalsOverlay/Android.mk <<'EOM1'
@@ -31,17 +29,6 @@ cat > aptxalsOverlay/AndroidManifest.xml <<'EOM2'
 </manifest>
 EOM2
 
-cat > aptxalsOverlay/res/drawable/readme <<'EOM3'
-Add licensed versions of following to this directory..
-qc_snp_sound.png
-EOM3
-
-
-cat > aptxalsOverlay/res/drawable-night/readme <<'EOM4'
-Add licensed versions of following to this directory..
-qc_snp_sound.png
-EOM4
-
 cat > aptxalsOverlay/res/values/strings.xml <<'EOM5'
 <?xml version="1.0" encoding="utf-8"?>
 <!--
@@ -56,7 +43,6 @@ cat > aptxalsOverlay/res/values/strings.xml <<'EOM5'
 -->
 <resources>
     <string name="a2dp_offload_enabled">true</string>
-    <string name="qss_enabled">false</string>
     <string name="spatializer_monitor_enabled">false</string>
     <string name="refresh_audio_profile_count_enabled">false</string>
 </resources>
